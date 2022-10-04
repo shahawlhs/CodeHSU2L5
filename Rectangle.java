@@ -12,16 +12,26 @@ public class Rectangle
     //complete the constructor
     public Rectangle(int rectWidth, int rectHeight)
     {
-        
+        width = rectWidth;
+        height = rectHeight;
     }
     
     //create a printArea method
     
+    public void printArea(){
+        int area = width * height;
+        System.out.println(area);
+    }
     
     //setter method, need to be able to set width and height
     
+    public void setHeight(int newHeight){
+        height = newHeight;
+    }
     
-    
+    public void setWidth(int newWidth){
+        width = newWidth;
+    }
     
     /**
      * This is the toString method. It returns a String
